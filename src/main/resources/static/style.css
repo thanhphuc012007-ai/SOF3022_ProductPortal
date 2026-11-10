@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 24px 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1a5fb4;
+    margin-top: 0;
+}
+
+.message {
+    font-size: 18px;
+    color: #2e7d32;
+}
+
+nav a {
+    color: #1a5fb4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    background-color: #1a5fb4;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul, ol {
+    line-height: 1.8;
+}

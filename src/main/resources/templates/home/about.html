@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${appName} + ' - Giới thiệu'">Product Portal - Giới thiệu</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div class="page">
+    <h1 th:text="${appName}">Product Portal</h1>
+    <p class="message" th:text="${message}">Chào mừng bạn đến với hệ thống quản lý sản phẩm</p>
+
+    <nav>
+        <a th:href="@{/home/index}">Trang chủ</a> |
+        <a th:href="@{/home/about}" class="active">Giới thiệu</a> |
+        <a th:href="@{/home/help}">Trợ giúp</a>
+    </nav>
+
+    <hr>
+
+    <h2>Giới thiệu</h2>
+    <ul>
+        <li><b>Tên hệ thống:</b> <span th:text="${appName}">Product Portal</span></li>
+        <li><b>Môn học:</b> <span th:text="${subject}">SOF3022 - Spring Boot MVC</span></li>
+        <li><b>Học kỳ:</b> <span th:text="${semester}">Summer 2026</span></li>
+        <li><b>Thông báo:</b> <span th:text="${message}">Chào mừng bạn đến với hệ thống quản lý sản phẩm</span></li>
+    </ul>
+
+    <p>Hệ thống được xây dựng bằng Spring Boot MVC và Thymeleaf,
+       dùng để quản lý thông tin sản phẩm.</p>
+</div>
+</body>
+</html>
